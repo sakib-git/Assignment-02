@@ -1,71 +1,75 @@
 @font-face {
-  font-family:'noto-serif';
+  font-family: 'noto-serif';
   src: url(fonts/noto-serif-v30-latin-700.woff2);
   font-weight: 700;
 }
 
 @font-face {
-  font-family:'inter';
+  font-family: 'inter';
   src: url(fonts/inter-v19-latin-700.woff2);
   font-weight: 700;
 }
 @font-face {
-  font-family:'inter';
+  font-family: 'inter';
   src: url(fonts/inter-v19-latin-600.woff2);
   font-weight: 600;
 }
 @font-face {
-  font-family:'inter';
+  font-family: 'inter';
   src: url(fonts/inter-v19-latin-regular.woff2);
   font-weight: 400;
 }
 
-*{
-  padding:0;
+:root {
+  --accent-clr: #e95a08;
+}
+
+* {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  font-family:'inter';
+body {
+  font-family: 'inter';
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
-.container{
+.container {
   max-width: 1140px;
   margin-inline: auto;
+  box-sizing: content-box;
+  padding-inline: 1rem;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 
   @media (width < 600px) {
-
     padding-inline: 1rem;
 
-    img{
+    img {
       width: 80px;
     }
   }
 }
-.nav-right-side{
+.nav-right-side {
   display: flex;
   gap: 15px;
   align-items: center;
 }
-.link-area{
+.link-area {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 
-  @media (width < 700px) {
- display: none;
+  @media (width < 600px) {
+    display: none;
   }
-
 }
 
 .link-area:first-child {
@@ -78,53 +82,105 @@ img{
 }
 
 .navbar .link-area a.active-color {
-  color: #8987A1;
+  color: #8987a1;
 }
 
-.cart{
+.cart-icon {
   display: flex;
   align-items: center;
   gap: 3px;
   font-size: 1rem;
 }
-.cart i{
+.cart i {
   font-size: 1.9rem;
 }
 
-.hero{
-  margin-top: 100px;
+.hero {
   display: flex;
   align-items: end;
-  @media (width < 700px) {
-    flex-direction: column-reverse;
+
+  > div {
+    flex: 1;
   }
-  .hero-heading{
-    padding-inline: 1rem;
+  .hero-heading {
     margin-top: 30px;
+ 
   }
 
+
+  @media (width < 600px) {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
 }
 
+.accent-clr {
+  color: var(--accent-clr);
+}
 
-h1, h2{
-  font-family:'noto-serif';
+h1,
+h2 {
+  font-family: 'noto-serif';
   font-weight: 700;
-font-size: clamp(2.3rem, 1.3957rem + 2.8936vw, 4rem);
-color: #000;
-  & span{
-    color: #E95A08;
-  }
+  font-size: clamp(1.5rem, 0.5385rem + 3.8462vw, 4rem);
+  color: #000;
 }
 .hero,
- .Our-Plants
-p{
+.Our-Plants p {
+  font-size: clamp(0.875rem, 0.6827rem + 0.7692vw, 1.375rem);
+  color: #00000050;
+    margin-top: 10px;
 
-   font-size: clamp(1.2rem, 1.0936rem + 0.3404vw, 1.4rem);
-    color: #00000050;
-    margin-top: 5px;
-} 
+}
 
-.Our-Plants{
+.Our-Plants {
   margin-top: 100px;
   text-align: center;
+}
+
+.add-to-cart-area{
+  margin-block: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+
+  @media (width <= 800px) {
+     grid-template-columns: repeat(3, 1fr);
+  }
+  @media (width <= 600px) {
+     grid-template-columns: repeat(2, 1fr);
+  }
+  @media (width <= 350px) {
+     grid-template-columns:1fr;
+  }
+
+}
+
+.cart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+button {
+  width: 100%;
+ height: 50px;
+ max-width: 270px;
+ border: none;
+ background-color: #e95a08;
+ color: white;
+ font-family:'inter';
+ font-weight: 600;
+ font-size: 1rem;
+}
+
+h3{
+    font-family:'inter';
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+h4{
+  font-family:'inter';
+  font-weight: 700;
+  font-size: 1.2rem;
 }
