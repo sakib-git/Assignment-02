@@ -44,6 +44,9 @@ img{
   margin-top: 20px;
 
   @media (width < 600px) {
+
+    padding-inline: 1rem;
+
     img{
       width: 80px;
     }
@@ -59,7 +62,7 @@ img{
   align-items: center;
   gap: 30px;
 
-  @media (width < 600px) {
+  @media (width < 700px) {
  display: none;
   }
 
@@ -87,3 +90,33 @@ img{
 .cart i{
   font-size: 1.9rem;
 }
+
+.hero{
+  margin-top: 100px;
+  display: flex;
+  align-items: end;
+  @media (width < 700px) {
+    flex-direction: column-reverse;
+  }
+  .hero-heading{
+    padding-inline: 1rem;
+    margin-top: 30px;
+  }
+
+}
+
+
+h1{
+  font-family:'noto-serif';
+  font-weight: 700;
+font-size: clamp(2.3rem, 1.3957rem + 2.8936vw, 4rem);
+  & span{
+    color: #E95A08;
+  }
+}
+.hero p{
+
+   font-size: clamp(1.2rem, 1.0936rem + 0.3404vw, 1.4rem);
+    color: #00000050;
+    margin-top: 5px;
+} 
