@@ -106,17 +106,25 @@ img{
 }
 
 
-h1{
+h1, h2{
   font-family:'noto-serif';
   font-weight: 700;
 font-size: clamp(2.3rem, 1.3957rem + 2.8936vw, 4rem);
+color: #000;
   & span{
     color: #E95A08;
   }
 }
-.hero p{
+.hero,
+ .Our-Plants
+p{
 
    font-size: clamp(1.2rem, 1.0936rem + 0.3404vw, 1.4rem);
     color: #00000050;
     margin-top: 5px;
 } 
+
+.Our-Plants{
+  margin-top: 100px;
+  text-align: center;
+}
