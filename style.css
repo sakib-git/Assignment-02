@@ -172,6 +172,7 @@ button {
  font-family:'inter';
  font-weight: 600;
  font-size: 1rem;
+ cursor: pointer;
 }
 
 h3{
@@ -183,4 +184,65 @@ h4{
   font-family:'inter';
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.flower-plant-lover-area{
+  display: flex;
+  gap: 40px;
+margin-bottom: 100px;
+margin-top: 200px;
+  > div{
+    flex: 1;
+  }
+@media (width <= 750px) {
+  flex-direction: column;
+
+  .trusted-badge{
+    display: none;
+  }
+  .flower-left-background-img{
+    margin-inline: auto;
+  }
+}
+}
+.flower-left-background-img{
+  position: relative;
+}
+
+.trusted-badge{
+  max-width: 266px;
+position: absolute;
+right: -85px;
+top: -130px;
+ animation: badge 2s linear infinite;
+}
+
+@keyframes badge {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flower-plant {
+  padding: 30px;
+
+}
+h5{
+  font-size: clamp(1.5rem, 0.875rem + 2.5vw, 3.125rem);
+  margin-bottom: 15px;
+    font-family: 'noto-serif';
+  font-weight: 700;
+}
+
+.flower-plant nav li{
+  font-size: clamp(0.875rem, 0.6827rem + 0.7692vw, 1.375rem);
+  color: #00000050;
+}
+.li-flower-plant{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
