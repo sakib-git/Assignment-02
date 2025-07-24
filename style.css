@@ -104,9 +104,7 @@ img {
   }
   .hero-heading {
     margin-top: 30px;
- 
   }
-
 
   @media (width < 600px) {
     flex-direction: column-reverse;
@@ -129,8 +127,7 @@ h2 {
 .Our-Plants p {
   font-size: clamp(0.875rem, 0.6827rem + 0.7692vw, 1.375rem);
   color: #00000050;
-    margin-top: 10px;
-
+  margin-top: 10px;
 }
 
 .Our-Plants {
@@ -138,25 +135,24 @@ h2 {
   text-align: center;
 }
 
-.add-to-cart-area{
+.add-to-cart-area {
   margin-block: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 
   @media (width <= 800px) {
-     grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   @media (width <= 600px) {
-     grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   @media (width <= 350px) {
-     grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
-
 }
 
-.cart{
+.cart {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,57 +160,57 @@ h2 {
 }
 button {
   width: 100%;
- height: 50px;
- max-width: 270px;
- border: none;
- background-color: #e95a08;
- color: white;
- font-family:'inter';
- font-weight: 600;
- font-size: 1rem;
- cursor: pointer;
+  height: 50px;
+  max-width: 270px;
+  border: none;
+  background-color: #e95a08;
+  color: white;
+  font-family: 'inter';
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-h3{
-    font-family:'inter';
+h3 {
+  font-family: 'inter';
   font-weight: 500;
   font-size: 1.2rem;
 }
-h4{
-  font-family:'inter';
+h4 {
+  font-family: 'inter';
   font-weight: 700;
   font-size: 1.2rem;
 }
 
-.flower-plant-lover-area{
+.flower-plant-lover-area {
   display: flex;
   gap: 40px;
-margin-bottom: 100px;
-margin-top: 200px;
-  > div{
+  margin-bottom: 100px;
+  margin-top: 200px;
+  > div {
     flex: 1;
   }
-@media (width <= 750px) {
-  flex-direction: column;
+  @media (width <= 750px) {
+    flex-direction: column;
 
-  .trusted-badge{
-    display: none;
-  }
-  .flower-left-background-img{
-    margin-inline: auto;
+    .trusted-badge {
+      display: none;
+    }
+    .flower-left-background-img {
+      margin-inline: auto;
+    }
   }
 }
-}
-.flower-left-background-img{
+.flower-left-background-img {
   position: relative;
 }
 
-.trusted-badge{
+.trusted-badge {
   max-width: 266px;
-position: absolute;
-right: -85px;
-top: -130px;
- animation: badge 2s linear infinite;
+  position: absolute;
+  right: -85px;
+  top: -130px;
+  animation: badge 2s linear infinite;
 }
 
 @keyframes badge {
@@ -228,21 +224,79 @@ top: -130px;
 
 .flower-plant {
   padding: 30px;
-
 }
-h5{
+h5 {
   font-size: clamp(1.5rem, 0.875rem + 2.5vw, 3.125rem);
   margin-bottom: 15px;
-    font-family: 'noto-serif';
+  font-family: 'noto-serif';
   font-weight: 700;
 }
 
-.flower-plant nav li{
+.flower-plant nav li {
   font-size: clamp(0.875rem, 0.6827rem + 0.7692vw, 1.375rem);
   color: #00000050;
 }
-.li-flower-plant{
+.li-flower-plant {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.latest-Deals-area {
+  font-size: clamp(0.875rem, 0.6827rem + 0.7692vw, 1.375rem);
+  color: #00000050;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.three-img-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+
+  img {
+    border-radius: 10px;
+  }
+  @media (width < 700px) {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+}
+.three-img-container .two-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deal-image-container {
+  position: relative;
+
+  span{
+    font-family: 'inter';
+    font-weight: 600;
+  }
+}
+.text-area-three-img {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(0, 0%, 0%, 0.3);
+  color: #fff;
+border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+h6{
+   font-family: 'noto-serif';
+   font-weight: 700;
+font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+   margin-bottom: 5px;
+   text-align: center;
+}
+.zabo-plant{
+  font-size: 2.5rem;
 }
