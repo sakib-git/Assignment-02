@@ -29,10 +29,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-html { scroll-behavior: smooth; } 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'inter';
-  background-color:#f5f8ff;
+  background-color: #f5f8ff;
 }
 
 img {
@@ -94,8 +96,12 @@ img {
   gap: 3px;
   font-size: 1rem;
 }
-.cart i {
-  font-size: 1.9rem;
+.cart-icon {
+  text-decoration: none;
+  color: #000;
+}
+.cart-icon i {
+  font-size: 2rem;
 }
 
 .hero {
@@ -219,9 +225,6 @@ h4 {
   right: -85px;
   top: -130px;
   animation: badge 4s linear infinite;
-filter: drop-shadow(0.75em 0.75em );
-
-
 }
 
 @keyframes badge {
@@ -285,21 +288,19 @@ h5 {
 .deal-image-container {
   position: relative;
   overflow: hidden;
-    border-radius: 10px;
+  border-radius: 10px;
 }
-.deal-image-container img{
+.deal-image-container img {
   width: 100%;
   height: 100%;
-    transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.two-img{
+.two-img {
   display: flex;
   justify-content: space-between;
 }
 .deal-image-container:hover img {
-  transform: scale(1.2); 
- 
- 
+  transform: scale(1.2);
 }
 .text-area-three-img {
   position: absolute;
@@ -384,19 +385,18 @@ input {
 
 footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(1rem, -2.0526rem + 5.614vw, 3rem);
   padding: 1rem;
 
   p {
     font-size: clamp(1.1rem, 0.9327rem + 0.2692vw, 1.075rem);
-   
+
     color: #6b7280;
     margin-top: 20px;
   }
   @media (width < 750px) {
     grid-template-columns: 1fr;
-    
   }
 }
 
@@ -411,7 +411,6 @@ footer {
     font-family: 'inter';
     text-align: start;
     font-size: 1rem;
-
   }
 }
 
@@ -424,14 +423,13 @@ footer {
   }
 }
 
-.twitter-img-bg{
+.twitter-img-bg {
   display: flex;
   text-align: center;
-background-color: #fff;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-padding: 10px 10px;
-box-shadow: 0 2px 10px hsl(0, 0%, 85%)
-
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px 10px;
+  box-shadow: 0 2px 10px hsl(0, 0%, 85%);
 }
