@@ -169,6 +169,9 @@ button {
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
+  &:hover{
+    background-color: red;
+  }
 }
 
 h3 {
@@ -273,30 +276,130 @@ h5 {
 
 .deal-image-container {
   position: relative;
+  overflow: hidden;
+}
 
-  span{
-    font-family: 'inter';
-    font-weight: 600;
-  }
+.deal-image-container:hover img {
+  transform: scale(1.2);
+  transition: all 0.4s ease;
 }
 .text-area-three-img {
   position: absolute;
   inset: 0;
-  background-color: hsl(0, 0%, 0%, 0.3);
+  background-color: hsl(0, 0%, 0%, 0.5);
   color: #fff;
-border-radius: 10px;
+  border-radius: 10px;
   display: grid;
   justify-items: center;
   align-content: center;
+  & a {
+    color: #fff;
+  }
 }
 
-h6{
-   font-family: 'noto-serif';
-   font-weight: 700;
-font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
-   margin-bottom: 5px;
-   text-align: center;
+h6 {
+  font-family: 'noto-serif';
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+  margin-bottom: 5px;
+  text-align: center;
 }
-.zabo-plant{
+.zabo-plant {
   font-size: 2.5rem;
+}
+.zabo-plant-a {
+  font-size: clamp(1rem, 0.8077rem + 0.7692vw, 1.5rem);
+}
+
+.join-colorfull-bunch {
+  position: relative;
+  margin-bottom: 40px;
+}
+.join-colorfull-bunch img {
+  width: 100%;
+}
+.join {
+  position: absolute;
+  inset: 0;
+  color: #fff;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+
+  span {
+    font-family: 'noto-serif';
+    font-weight: 700;
+    font-size: clamp(1.25rem, 0.5288rem + 2.8846vw, 3.125rem);
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  @media (width < 600px) {
+    padding-inline: 3rem;
+  }
+}
+.input-area {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  max-width: 644px;
+  min-width: 0;
+  height: 50px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  padding-inline: 0.8rem;
+  font-size: 1rem;
+  font-family: 'inter';
+}
+
+.input-btn {
+  width: 186px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 1rem;
+
+  p {
+    font-size: clamp(1rem, 0.9327rem + 0.2692vw, 1.175rem);
+    color: #6b7280;
+    margin-top: 20px;
+  }
+  @media (width < 700px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.footer-link-area {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  a {
+    text-decoration: none;
+    color: #6b7280;
+    font-family: 'inter';
+    text-align: center;
+    font-size: 1rem;
+    @media (width < 700px) {
+      text-align: start;
+    }
+  }
+}
+
+.social-link {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+      @media (width < 700px) {
+     justify-content: start;
+    }
 }
